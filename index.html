@@ -1,0 +1,816 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Week 6: Game Day Details</title>
+<meta name="description" content="Denver Broncos vs. Seattle Seahawks @ Empower Field at Mile High">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://broncos6kbyg.netlify.app/">
+<meta property="og:title" content="Know Before You Go – #SEAvsDEN">
+<meta property="og:description" content="Everything you need to know before Broncos vs. Seahawks on Thursday, Oct. 15 at Empower Field at Mile High.">
+<meta property="og:image" content="https://broncos6kbyg.netlify.app/cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Seahawks and Broncos helmets – Know Before You Go">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://broncos6kbyg.netlify.app/cover.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;800&display=swap">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<script>document.documentElement.setAttribute("data-theme","light");</script>
+<style>
+/* Layout: navy hero band with a throwback stripe, then one column of sections; compact contact cards. */
+/* Palette: Legacy Blue and Orange Crush from the Broncos throwback set, white pant stripe, warm neutral ground. */
+:root{
+  --bg:#FFFBF5; --surface:#FFFFFF; --ink:#0A2343; --muted:rgba(10,35,67,.72);
+  --navy:#0A2343; --orange:#F37021; --throwback:#F37021; --line:#CFC3B4; --tint:#CFC3B4;
+  --display:"Barlow Condensed","Arial Narrow",sans-serif;
+  --body:"Barlow",system-ui,sans-serif;
+  --wide:'Raspberie','Chalets','Helvetica Neue',Helvetica,sans-serif;
+  --accent:'Raspberie','Chalets',Georgia,serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A2343; --surface:#0A2343; --ink:#FFFFFF; --muted:rgba(255,255,255,.75);
+    --navy:#FFFFFF; --orange:#F37021; --throwback:#F37021; --line:#CFC3B4; --tint:#CFC3B4; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A2343; --surface:#0A2343; --ink:#FFFFFF; --muted:rgba(255,255,255,.75);
+  --navy:#FFFFFF; --orange:#F37021; --throwback:#F37021; --line:#CFC3B4; --tint:#CFC3B4; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 var(--body)}
+.wrap{max-width:960px;margin:0 auto;padding-inline:16px;padding-block:0 56px}
+a{color:var(--orange)}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.02em;line-height:1.05;text-wrap:balance;margin:0}
+.hero{background:var(--navy);color:#FFFFFF;margin:0;padding:28px 16px 34px;position:relative}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:20px;background:linear-gradient(var(--orange) 0 14px,#0064B5 14px 20px)}
+.hero .wrap{padding-block:0}
+.eyebrow{font-family:var(--display);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:14px;color:#F37021}
+.hero h1{font-weight:800;font-size:clamp(40px,8vw,68px);margin-top:4px}
+.hero p{margin:10px 0 0;color:#FFFFFF;max-width:60ch}
+.nav{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 8px}
+.nav a{font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:14px;text-decoration:none;color:var(--navy);background:var(--surface);border:1px solid var(--line);padding:6px 12px;border-radius:3px}
+[data-theme="dark"] .nav a, :root:not([data-theme="light"]) .nav a{color:var(--ink)}
+.nav a:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+section{margin-top:48px;scroll-margin-top:16px}
+section > h2{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:30px;font-weight:800;color:var(--navy);border-left:8px solid var(--orange);padding-left:12px}
+[data-theme="dark"] section > h2, :root:not([data-theme="light"]) section > h2{color:var(--ink)}
+/* Game day details: light blue section rules */
+#run-of-show > h2, #rideshare > h2, #stadium > h2, #mobile-ticketing > h2, #game-time-temps > h2{border-left-color:#0064B5}
+/* Sticky back-to-top button: stays in the corner while scrolling */
+.totop{position:fixed;right:16px;bottom:16px;z-index:10;font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;background:var(--navy);color:#FFFFFF;border-radius:3px;padding:10px 14px;box-shadow:0 4px 14px rgba(10,35,67,.25)}
+.sub{color:var(--muted);margin:10px 0 0}
+[hidden]{display:none!important}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:20px 0 0}
+.tabs button{font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:15px;background:var(--surface);color:var(--navy);border:1px solid var(--line);border-bottom:4px solid var(--line);padding:8px 14px;border-radius:3px;cursor:pointer}
+[data-theme="dark"] .tabs button, :root:not([data-theme="light"]) .tabs button{color:var(--ink)}
+.tabs button[aria-selected="true"]{background:#0A2343 !important;color:#FFFFFF !important;border-color:#0A2343 !important;border-bottom-color:#F37021 !important}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;margin-top:16px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:16px}
+.label{font-family:var(--display);text-transform:uppercase;letter-spacing:.06em;font-size:20px;font-weight:800;color:#0064B5;line-height:1.1}
+.value{font-weight:600;margin-top:2px}
+#briefing-profiles .label, #briefing-overlap .label{color:#0A2343}
+table{width:100%;border-collapse:collapse;margin-top:12px}
+.tablewrap{overflow-x:auto}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:var(--muted);font-weight:600}
+td.time{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap;min-width:0}
+.pill{display:inline-block;font-family:var(--display);font-weight:600;text-transform:uppercase;font-size:12px;letter-spacing:.08em;padding:2px 8px;border-radius:3px;background:var(--tint);color:var(--navy)}
+[data-theme="dark"] .pill, :root:not([data-theme="light"]) .pill{color:var(--ink)}
+.pill.todo{background:#F37021;color:#FFFFFF}
+/* Small icon-only copy button at the end of each phone or email row */
+.copy{margin-left:auto;flex:none;display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;padding:0;border:1px solid var(--line);background:var(--tint);color:var(--navy);border-radius:3px;cursor:pointer}
+[data-theme="dark"] .copy, :root:not([data-theme="light"]) .copy{color:var(--ink)}
+.copy svg{width:13px;height:13px}
+.copy.done{color:#FFFFFF;background:var(--navy);border-color:var(--navy)}
+/* Click-to-call icon button, sits before the copy icon */
+.call{margin-left:auto;flex:none;display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border:1px solid var(--line);background:var(--tint);color:var(--navy);border-radius:3px;text-decoration:none}
+[data-theme="dark"] .call, :root:not([data-theme="light"]) .call{color:var(--ink)}
+.call svg{width:13px;height:13px}
+.call:hover{background:var(--navy);color:#FFFFFF;border-color:var(--navy)}
+.call + .copy{margin-left:0}
+/* Standard contact card: same compact height in every grid */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px 12px 20px;position:relative;overflow:hidden;min-width:0;min-height:130px}
+.card::before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:var(--navy)}
+/* Tallgrass guests get the Tallgrass blue bar */
+.card.tg::before{background:#0064B5}
+.card h3{font-size:18px;font-weight:800;color:var(--navy);line-height:1.1}
+[data-theme="dark"] .card h3, :root:not([data-theme="light"]) .card h3{color:var(--ink)}
+.card .org{color:var(--muted);font-size:12.5px;line-height:1.25}
+.card .row{display:flex;align-items:center;gap:8px;margin-top:4px;min-height:32px;font-size:14.5px;overflow-wrap:anywhere}
+.card .row > a,.card .row > span{min-width:0;text-decoration:none;color:var(--ink)}
+.card .row > a:hover{color:var(--orange);text-decoration:underline}
+.card.guest{height:auto;padding-bottom:12px}
+.card.guest .row.gap{margin-top:10px}
+.card.guest .row{font-size:13px;gap:6px}
+.card.guest .row > a{white-space:nowrap}
+/* Mobile ticketing: steps 1-4 on one row, then two wide panels on row 2 */
+.steps-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.steps-grid .span-2{grid-column:span 2}
+@media (max-width:640px){.steps-grid{gap:10px}.steps-grid .panel{padding:12px}.steps-grid .label{font-size:16px}}
+.kicker{font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:13px;font-weight:400;color:#0064B5;margin:14px 0 4px}
+.subhead{font-family:'Barlow Condensed',Barlow,sans-serif;font-weight:800;font-size:20px;letter-spacing:.06em;line-height:1.1;color:#0064B5;text-transform:uppercase;margin:18px 0 0}
+.btn{font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:14px;text-decoration:none;background:var(--navy);color:#FFFFFF;border-radius:3px;padding:8px 14px}
+.btn.ghost{background:transparent;color:var(--navy);border:1px solid var(--navy)}
+[data-theme="dark"] .btn.ghost, :root:not([data-theme="light"]) .btn.ghost{color:var(--ink);border-color:var(--ink)}
+.empty{border:2px dashed var(--line);border-radius:12px;padding:20px;color:var(--muted);background:transparent}
+.note{font-size:14px;color:var(--muted);margin-top:10px}
+ul.clean{margin:8px 0 0;padding-left:20px}
+ul.clean li{margin:4px 0}
+/* Game-time weather card: navy gradient, orange glow, large display numerals */
+.wx{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--navy) 0%,#0A2343 100%);color:#FFFFFF;border-radius:16px;padding:26px 24px 22px;margin-top:16px;box-shadow:0 12px 32px rgba(10,35,67,.28)}
+.wx::after{content:"";position:absolute;right:-70px;top:-70px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(252,76,2,.38),transparent 70%);pointer-events:none}
+.wx > *{position:relative;z-index:1}
+.wx-top{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.wx-icon svg{width:88px;height:88px;display:block}
+.wx-temp{font-family:var(--display);font-weight:800;font-size:clamp(38px,7vw,58px);line-height:1;letter-spacing:.01em}
+.wx-temp small{display:block;font-family:var(--body);font-weight:500;font-size:15px;line-height:1.35;color:#FFFFFF;margin-top:8px;letter-spacing:.01em;max-width:34ch}
+.wx-line{font-size:18px;line-height:1.5;color:#FFFFFF;margin:18px 0 0;max-width:52ch}
+.wx-kick{margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,.18)}
+.wx-kick span,.wx-stats span{display:block;font-family:var(--display);text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:600;color:#F37021}
+.wx-kick strong{display:block;font-size:20px;font-weight:600;margin-top:2px}
+.wx-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:18px}
+.wx-stats div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:10px 12px}
+.wx-stats strong{display:block;font-weight:600;font-size:15px;margin-top:2px}
+.wx-tag{font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-weight:800;font-size:22px;line-height:1.1;margin:20px 0 0}
+.wx-tag em{font-style:normal;color:var(--orange)}
+
+/* Blitz Forecast card: compact, about half height */
+.wx{padding:12px 14px 10px;margin-top:10px;border-radius:12px}
+.wx-top{gap:10px}
+.wx-icon svg{width:44px;height:44px}
+.wx-temp{font-size:clamp(22px,4vw,30px)}
+.wx-temp small{font-size:11px;margin-top:3px;max-width:none}
+.wx-line{font-size:12px;line-height:1.35;margin-top:8px}
+.wx-kick{margin-top:8px;padding-top:7px}
+.wx-kick span,.wx-stats span{font-size:10px;letter-spacing:.08em}
+.wx-kick strong{font-size:13px;margin-top:1px}
+.wx-stats{margin-top:8px;gap:6px}
+.wx-stats div{padding:5px 7px;border-radius:6px}
+.wx-stats strong{font-size:11px;margin-top:1px}
+.wx-tag{font-size:13px;margin-top:8px}
+footer{margin-top:44px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:14px}
+@media (prefers-reduced-motion: no-preference){ section{animation:rise .5s ease both} }
+@keyframes rise{from{opacity:.0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.a2hs{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;background:#0A2343;color:#FFFFFF;border-radius:12px;padding:14px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;box-shadow:0 8px 24px rgba(10,35,67,.25)}
+.a2hs[hidden]{display:none}
+.a2hs-text{font-size:15px}
+.a2hs-text strong{font-family:var(--display);text-transform:uppercase;letter-spacing:.04em;font-weight:800;font-size:17px;display:block}
+.a2hs-text span{display:block;font-size:14px;margin-top:4px;opacity:.9}
+.a2hs-actions{display:flex;gap:8px;flex-shrink:0}
+.a2hs button{font-family:var(--display);text-transform:uppercase;font-weight:800;letter-spacing:.06em;font-size:14px;border-radius:3px;padding:8px 12px;cursor:pointer;border:1px solid rgba(255,255,255,.5);background:transparent;color:#FFFFFF}
+.a2hs #a2hs-add{background:#F37021;border-color:#F37021}
+.a2hs button[hidden]{display:none}
+</style>
+</head><body>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">Thursday, Oct. 15, 2026 • 6:15 PM MDT Kickoff</div>
+    <h1>Week 6: Game Day Details</h1>
+    <p>Denver Broncos vs. Seattle Seahawks at Empower Field at Mile High</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="tabs" role="tablist">
+    <button type="button" role="tab" data-tab="main" aria-selected="true">Game day details</button>
+    <button type="button" role="tab" data-tab="suite" aria-selected="false">Suite</button>
+    <button type="button" role="tab" data-tab="briefing" aria-selected="false">Guest Briefing</button>
+    <button type="button" role="tab" data-tab="cph" aria-selected="false">CPH</button>
+  </div>
+
+  <div data-tab="main">
+  <section id="game-time-temps">
+    <h2>Blitz Forecast</h2>
+    <p class="sub" style="font-size:8pt">Outlook for<a href="https://www.google.com/search?kgmid=%2Fm%2F02hxv8" target="_blank" rel="noopener">Mile High Stadium</a>, Thursday, Oct 15. Source: AccuWeather, Denver (80203), retrieved Oct 15 morning.</p>
+    <div class="wx">
+      <div class="wx-top">
+        <div class="wx-icon" aria-hidden="true">
+          <svg viewBox="0 0 96 96" fill="none">
+            <circle cx="70" cy="24" r="11" fill="#F37021"/>
+            <g fill="#FFFFFF">
+              <rect x="20" y="52" width="52" height="18" rx="9"/>
+              <circle cx="34" cy="50" r="13"/>
+              <circle cx="54" cy="42" r="18"/>
+              <circle cx="70" cy="54" r="10"/>
+            </g>
+            <g stroke="#CFC3B4" stroke-width="3" stroke-linecap="round">
+              <line x1="32" y1="78" x2="28" y2="88"/>
+              <line x1="48" y1="78" x2="44" y2="88"/>
+              <line x1="64" y1="78" x2="60" y2="88"/>
+            </g>
+          </svg>
+        </div>
+        <div class="wx-temp">
+          59°F
+          <small>High on Thursday, low of 30°F overnight</small>
+        </div>
+      </div>
+      <p class="wx-line">Morning showers, then clouds giving way to some sun. Gusty winds can blow around unsecured objects.</p>
+      <div class="wx-kick">
+        <span>At kickoff, 6:15 PM</span>
+        <strong>About 55°F, 20% chance of rain</strong>
+      </div>
+      <div class="wx-stats">
+        <div><span>Conditions</span><strong>Morning showers, then sun</strong></div>
+        <div><span>Winds</span><strong>Gusty, from the north</strong></div>
+        <div><span>Precipitation</span><strong>74% at 7 AM, 20% by 2 PM</strong></div>
+        <div><span>Feel</span><strong>RealFeel 43°F (6:50 AM)</strong></div>
+      </div>
+      <p class="wx-tag">Bring layers. <em>Bring the good coat.</em></p>
+    </div>
+  </section>
+
+  <section id="run-of-show">
+    <h2>First Down &amp; Down to the Minute</h2>
+    <div class="panel tablewrap">
+      <table>
+        <thead><tr><th>Time (MDT)</th><th>What happens</th></tr></thead>
+        <tbody>
+          <tr><td class="time">3:00 PM</td><td>Mane St. opens. Free, south side between Gates 9 &amp; 10, with the Broncos Cheerleaders, Stampede Drumline, and Miles the Mascot.</td></tr>
+          <tr><td class="time">3:15 PM</td><td>Premium gates 2 &amp; 7 open.</td></tr>
+          <tr><td class="time">4:15 PM</td><td>All gates open. Cold food delivered to the suite.</td></tr>
+          <tr><td class="time">~6:00 PM</td><td>Hot food delivered to the suite, about one hour before kickoff, unless other arrangements are made.</td></tr>
+          <tr><td class="time">5:55 PM</td><td>Climb to Kickoff.</td></tr>
+          <tr><td class="time">6:15 PM</td><td>Kickoff vs. Seattle Seahawks.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="gameday-events">
+    <h2>Gameday Mane Events</h2>
+    <div class="panel">
+      <div class="stadium-list">
+        <p style="margin-top:14px"><strong>Week 6:</strong> "Crucial Catch / Fight Like a Bronco" with a throwback game celebrating Broncos history</p>
+        <p><strong>Pregame:</strong> Mane St., free and presented by Ford, with the Broncos Cheerleaders, Stampede Drumline, Miles the Mascot, alumni, a live DJ, and food trucks HipPops, Lucky Bird, and Woodhill BBQ. The Thunder Meet &amp; Greet runs 4:00 to 4:30 PM near the Southeast Tunnel.</p>
+        <p><strong>Concessions:</strong> Birdcall chicken and a limited-edition Throwback Sideline Cooler Cup, at Section 110 and full-stocked bars</p>
+        <p><strong>Anthem:</strong> the Broncos profile Kayla Ruby, a frequent anthem performer, but the page doesn't confirm she performs this game.</p>
+        <p><strong>Recognition:</strong> the Soldiers of the 2-135th Aviation Regiment, Colorado Army National Guard, are featured this week</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="mobile-ticketing">
+    <h2>Mobile ticketing</h2>
+    <div class="grid steps-grid">
+      <div class="panel">
+        <div class="label">Step 1</div>
+        <p class="note" style="margin:0 0 6px">Before game day</p>
+        <div class="value">Install and update the <a href="https://www.denverbroncos.com/mobile-app/" target="_blank" rel="noopener">Denver Broncos app</a> and the Ticketmaster app</div>
+        <p class="note"><a href="https://apps.apple.com/us/app/ticketmaster-buy-sell-tickets/id500003565" target="_blank" rel="noopener">Apple App Store</a><br><a href="https://play.google.com/store/apps/details?id=com.ticketmaster.mobile.android.na&amp;hl=en_CA" target="_blank" rel="noopener">Google Play Store</a></p>
+      </div>
+      <div class="panel">
+        <div class="label">Step 2</div>
+        <div class="value">Log in to each app with the same email address</div>
+      </div>
+      <div class="panel">
+        <div class="label">Step 3</div>
+        <div class="value">Accept the tickets as soon as they're sent</div>
+      </div>
+      <div class="panel">
+        <div class="label">Step 4</div>
+        <div class="value">Add the tickets to your phone's wallet before you arrive</div>
+        <p class="note">WiFi at the stadium is unreliable on game day.</p>
+      </div>
+      <div class="panel span-2">
+        <div class="label">Your tickets</div>
+        <div class="value">Texted to you by Rachel via SMS</div>
+        <p class="note"><a href="sms:+18327766028">Text (832) 776-6028</a></p>
+      </div>
+      <div class="panel span-2">
+        <div class="label">Mobile Ticketing Guide</div>
+        <div class="value"><a href="https://www.denverbroncos.com/tickets/mobiletickets/" target="_blank" rel="noopener">Broncos mobile ticketing guide</a></div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="label">Entry</div>
+      <p style="margin:8px 0 0">Gate 7 is the best entrance for suite access. Check your ticket for your recommended gate before the Climb to Kickoff at 5:55 PM. Guests are welcome to arrive any time gates are open. About 60 minutes before kickoff is a comfortable window to beat the crowd and settle into the suite before the game begins.</p>
+    </div>
+  </section>
+
+  <section id="rideshare">
+    <h2>The Orange Crush Hour: Avoiding the Commuter Rush</h2>
+    <div class="panel" id="departure-planner">
+      <div class="label">Departure planner</div>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:10px">
+        <label style="display:block">
+          <span class="note" style="display:block;margin-top:0">Starting point</span>
+          <select style="width:100%;padding:8px;border:1px solid var(--line);border-radius:3px;background:var(--surface);color:var(--ink);font:inherit">
+            <option>Downtown Denver</option><option>Aurora</option><option>Lakewood</option><option>Golden</option><option>Highlands Ranch</option><option>Thornton</option><option>Denver Airport</option><option>Castle Rock</option><option>Boulder</option><option>Greeley</option><option>Fort Collins</option><option>Colorado Springs</option>
+          </select>
+        </label>
+        <label style="display:block">
+          <span class="note" style="display:block;margin-top:0">Travel mode</span>
+          <select style="width:100%;padding:8px;border:1px solid var(--line);border-radius:3px;background:var(--surface);color:var(--ink);font:inherit">
+            <option>Car</option><option>Light rail</option><option>Rideshare</option>
+          </select>
+        </label>
+      </div>
+      <div class="value" style="margin-top:14px">Estimated departure window: 3:10 – 3:30 PM</div>
+      <p class="note">These are estimates based on typical traffic, not exact times. Build in extra time and check conditions before you leave.</p>
+      <span style="display:block;margin-top:7px;font-size:12.5px;color:#9DB2CC"> All times shown are Mountain Time. </span>
+      <p class="note"><a href="https://www.denverbroncos.com/game-day/kbyg" target="_blank" rel="noopener">Open the official Broncos departure planner</a></p>
+    </div>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:16px">
+    <div class="panel">
+      <div class="label">Rideshare</div>
+      <p style="margin:10px 0 0"><strong>Arrival</strong><br>If you're arriving via Rideshare, you'll be dropped off at the northeast corner of the stadium near Gate 5.</p>
+      <p style="margin:12px 0 0"><strong>Departure</strong><br>All rideshare pickups are at the Ball Arena Rideshare Lot on 5th &amp; Walnut. This is about a 15-minute walk from the stadium.</p>
+    </div>
+    <div class="panel">
+      <div class="label">Parking Lots</div>
+      <p style="margin:10px 0 0"><strong>New lot names, same gameday routine</strong><br>New this season, a few parking lots now carry partner names on signage, maps, and gameday directions.</p>
+      <ul class="clean">
+        <li>Ford Super Duty (Lot A)</li>
+        <li>Ford Bronco (Lot B)</li>
+        <li>Ford F-150 (Lot C)</li>
+        <li>SRM Concrete (Lot G)</li>
+        <li>SRM Concrete (Lot I)</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <div class="label">Lightrail &amp; Bus</div>
+      <div class="stadium-list" style="margin-top:12px">
+        <p>The C, E, and W lines stop at Empower Field at Mile High Station, about a 15-minute walk from Gate 8.</p>
+        <p>Buy your return fare before the game to skip the postgame line.</p>
+        <p><a href="https://www.rtd-denver.com/" target="_blank" rel="noopener">RTD schedules and fares</a></p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="stadium">
+    <h2>Stadium</h2>
+    <div class="panel">
+      <div class="stadium-list">
+        <p><a href="http://empowerfieldatmilehigh.com/plan-your-visit/ada-guide" target="_blank" rel="noopener">ADA Guide</a></p>
+        <p><a href="https://denverbroncos.io-media.com/web/index.html" target="_blank" rel="noopener">Seating Map</a></p>
+        <p><strong>Bag Policy:</strong> Small bags up to 4.5 × 6.5" or clear bags up to 12 × 6 × 12" and one-gallon clear resealable bags are permitted. Backpacks, larger purses, coolers, briefcases, camera bags, and seat cushions are not allowed. <a href="https://www.empowerfieldatmilehigh.com/clear-bag-policy-1" target="_blank" rel="noopener">Clear bag policy</a></p>
+        <p><strong>Cashless stadium:</strong> Cards and contactless payment only.</p>
+        <p><strong>Re-entry:</strong> not permitted with a previously scanned ticket.</p>
+        <p><a href="https://www.empowerfieldatmilehigh.com/plan-your-visit/directions-parking/broncos/" target="_blank" rel="noopener">Parking and directions</a></p>
+        <p><a href="https://www.empowerfieldatmilehigh.com/plan-your-visit/fan-code-of-conduct" target="_blank" rel="noopener">Fan code of conduct</a></p>
+        <p><a href="https://www.empowerfieldatmilehigh.com/assets/doc/tailgating-fancodeofconduct-rules-fdc0ca24cc.pdf" target="_blank" rel="noopener">Tailgating rules</a></p>
+      </div>
+<style>.stadium-list p{margin:0 0 10px;list-style:none}.stadium-list p:last-child{margin-bottom:0}</style>
+    </div>
+  </section>
+
+
+
+
+  </div>
+
+  <section id="suite" data-tab="suite">
+    <h2>Suite details</h2>
+    <div class="panel">
+      <div class="label">Welcome</div>
+      <p style="margin:8px 0 0">We're excited to host you in Suite 283 for the Broncos' Thursday Night Football matchup against the Seattle Seahawks. Below are the details you'll need to prepare for the game.</p>
+    </div>
+
+
+
+  </section>
+
+  <section id="suite-guests" data-tab="suite">
+    <h2>Suite guest list</h2>
+    <p class="sub">Invitees attending, with organization, phone and email.</p>
+    <div class="subhead">Hosts</div>
+    <div class="grid" id="host-grid"></div>
+    <div class="subhead">Guests</div>
+    <div class="grid" id="suite-grid"></div>
+  </section>
+
+  <section id="club-seats" data-tab="suite">
+    <h2>Club Seats</h2>
+    <div class="grid" id="club-grid"></div>
+  </section>
+
+  <section id="catering" data-tab="suite">
+    <h2>Catering</h2>
+    <div class="panel">
+      <div class="label">Catering account and suite iPad ordering</div>
+      <div class="value" style="margin-top:8px">Username: rachel.carmichael@tallgrass.com</div>
+      <div class="value">Password: 26999</div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Sam Day</h3>
+        <div class="org">Epicurean Sports, Sales</div>
+        <div class="row"><a href="tel:+17202583590">720.258.3590</a><button class="copy" data-copy="720.258.3590" aria-label="Copy phone number"></button></div>
+        <div class="row"><a href="mailto:sday@epicureancg.com">sday@epicureancg.com</a><button class="copy" data-copy="sday@epicureancg.com" aria-label="Copy email"></button></div>
+      </div>
+      <div class="card">
+        <h3>Lindsey Astroth</h3>
+        <div class="org">Epicurean Sports, Event Designer</div>
+        <div class="row"><a href="tel:+13037182271">Mobile 303.718.2271</a><button class="copy" data-copy="303.718.2271" aria-label="Copy mobile number"></button></div>
+        <div class="row"><a href="mailto:lastroth@epicureancg.com">lastroth@epicureancg.com</a><button class="copy" data-copy="lastroth@epicureancg.com" aria-label="Copy email"></button></div>
+      </div>
+      <div class="card">
+        <h3>Jan Budzen</h3>
+        <div class="org">Epicurean Sports, Accounts Receivable</div>
+        <div class="row"><a href="tel:+17204882163">720.488.2163</a><button class="copy" data-copy="720.488.2163" aria-label="Copy phone number"></button></div>
+        <div class="row"><a href="mailto:jbudzen@epicureancg.com">jbudzen@epicureancg.com</a><button class="copy" data-copy="jbudzen@epicureancg.com" aria-label="Copy email"></button></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="briefing-glance" data-tab="briefing">
+    <h2>Guest Briefing</h2>
+    <p class="sub">Week 6 background on this week's guests, from the Week 6 Guest Briefing document.</p>
+    <div class="panel tablewrap">
+      <div class="label">At a glance</div>
+      <table>
+        <thead><tr><th>#</th><th>Name</th><th>Organization</th><th>Title</th><th>Sector</th></tr></thead>
+        <tbody>
+          <tr><td class="time">1</td><td>Bill Ritter</td><td>Freestone Strategies</td><td>Partner</td><td>Lobbying / public affairs (energy, climate)</td></tr>
+          <tr><td class="time">2</td><td>Rich Werner</td><td>Upstate Colorado Economic Development</td><td>President &amp; CEO</td><td>Economic development (Weld County)</td></tr>
+          <tr><td class="time">3</td><td>Naomi Colwell</td><td>Aurora Chamber of Commerce</td><td>President &amp; CEO</td><td>Chamber of commerce (Aurora)</td></tr>
+          <tr><td class="time">4</td><td>Kelly Flenniken</td><td>Colorado Counties, Inc.</td><td>Executive Director</td><td>Statewide county association</td></tr>
+          <tr><td class="time">5</td><td>Lisa Hough</td><td>Adams County Regional Economic Partnership</td><td>President &amp; CEO</td><td>Economic development (Adams County)</td></tr>
+          <tr><td class="time">6</td><td>Leslie Oliver</td><td>Denver Metro Chamber of Commerce</td><td>Vice President, External Affairs</td><td>Chamber policy and advocacy</td></tr>
+          <tr><td class="time">7</td><td>Tim Miller</td><td>Colorado Farm Bureau</td><td>Director, Industry Relations</td><td>Agriculture policy</td></tr>
+          <tr><td class="time">8</td><td>Aaron Johnson</td><td>Western Energy Alliance</td><td>Vice President, Public and Legislative Affairs</td><td>Oil and gas trade association</td></tr>
+          <tr><td class="time">9</td><td>Don Richards</td><td>Former Denver Metro Chamber board member</td><td>Financial advisor and independent insurance broker</td><td>Finance / business community</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="briefing-profiles" data-tab="briefing">
+    <h2>Contact profiles</h2>
+
+    <div class="panel">
+      <div class="label">Bill Ritter</div>
+      <div class="value">Freestone Strategies · Partner</div>
+      <p class="kicker">Background</p>
+      <p>Former Governor of Colorado (Democrat), 2007 to 2011. He was Colorado's 41st governor.</p>
+      <p>Earlier served as Denver District Attorney for about 12 years and practiced law at Hogan &amp; Hartson before running for governor.</p>
+      <p>Founded the Center for the New Energy Economy at Colorado State University in 2011 and directed it until his recent retirement.</p>
+      <p class="kicker">Current role and organization</p>
+      <p>Joined Freestone Strategies as a partner (announced February 2025). The firm was founded in 2016 and provides public affairs, media and crisis communications, and government relations, with a focus on energy and environment.</p>
+      <p class="kicker">Relevance</p>
+      <p>Strong Colorado government and energy-policy relationships from his time as governor and at CSU. Useful for understanding how clean energy policy has developed in Colorado.</p>
+      <p class="kicker">Contact</p>
+      <p>Freestone Strategies (Denver-based national lobbying and public affairs firm)<br><a href="tel:+13033251955">(303) 325-1955</a><br><a href="mailto:bill@freestone-strategies.com">bill@freestone-strategies.com</a><br><a href="https://www.linkedin.com/in/bill-ritter-74b01933" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+
+    <div class="panel">
+      <div class="label">Rich Werner</div>
+      <div class="value">Upstate Colorado Economic Development · President &amp; CEO</div>
+      <p class="kicker">Background</p>
+      <p>Previously Vice President of Pueblo Economic Development Corp., a role he held from 2009.</p>
+      <p>Appointed president and CEO of Upstate, succeeding Eric Berglund, after a national search with four finalists.</p>
+      <p class="kicker">Current role and organization</p>
+      <p>Upstate is a public/private nonprofit economic development corporation, formed in 1987, serving all of Weld County. In July 2026 it announced three new board appointments (Todd Benson, Matt Betts, and Matt Le Cerf).</p>
+      <p class="kicker">Relevance</p>
+      <p>Primary contact for economic development in Northern Colorado and the Greeley area. Has spoken publicly on manufacturing in Northern Colorado.</p>
+      <p class="kicker">Contact</p>
+      <p>Upstate Colorado Economic Development (Greeley)<br><a href="tel:+19703711081">(970) 371-1081</a><br><a href="mailto:rwerner@upstatecolorado.org">rwerner@upstatecolorado.org</a><br><a href="https://www.linkedin.com/in/richard-werner-bab40117" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+
+    <div class="panel">
+      <div class="label">Naomi Colwell</div>
+      <div class="value">Aurora Chamber of Commerce · President &amp; CEO</div>
+      <p class="kicker">Background</p>
+      <p>Joined the Aurora Chamber in 1999. Served as marketing and events director, then left in 2017 to become president of the Brighton Chamber of Commerce.</p>
+      <p>Returned to Aurora as interim president and CEO on July 1, 2023, when Kevin Hougen retired after leading the Chamber since 1999. Now serves as President/CEO.</p>
+      <p>More than 20 years of experience across metro-area chambers, including event management, finance, sales, and sponsorships.</p>
+      <p class="kicker">Current role and organization</p>
+      <p>Other roles: Executive Director, Aurora Police Foundation; board member, Open Space Advisory Board, City of Centennial; has worked with Cycle of Hope, an organization serving people with disabilities.</p>
+      <p class="kicker">Relevance</p>
+      <p>Leads the chamber for a major Aurora business community in the east metro area, including Leadership Aurora programming.</p>
+      <p class="kicker">Contact</p>
+      <p><a href="tel:+17206092054">(720) 609-2054</a><br><a href="mailto:NColwell@aurorachamber.org">NColwell@aurorachamber.org</a><br><a href="https://www.linkedin.com/in/naomi-colwell" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+
+    <div class="panel">
+      <div class="label">Kelly Flenniken</div>
+      <div class="value">Colorado Counties, Inc. (CCI), Denver · Executive Director</div>
+      <p class="kicker">Background</p>
+      <p>First woman to lead CCI, effective October 16, 2023. Succeeded John Swartout, who retired.</p>
+      <p>Previously director of community relations at Xcel Energy. Former executive director of the Grand Junction Economic Partnership.</p>
+      <p>Has held local government positions in Denver and Chicago. Brings nearly 20 years of experience in public policy, leadership, and government relations.</p>
+      <p class="kicker">Current role and organization</p>
+      <p>CCI is a nonprofit membership association founded in 1907 that supports county commissioners, mayors, and council members. It advocates for counties before the General Assembly and runs the CCI Foundation, which hosts statewide conferences. CCI's website now says it represents all 64 counties; 2023 coverage said 62 of 64.</p>
+      <p class="kicker">Relevance</p>
+      <p>Key contact for county-level policy in Colorado, including land use, housing affordability, and county government administration. Has an energy-industry background through Xcel Energy.</p>
+      <p class="kicker">Contact</p>
+      <p><a href="tel:+19707781118">(970) 778-1118</a><br><a href="mailto:kflenniken@ccionline.org">kflenniken@ccionline.org</a><br><a href="https://www.linkedin.com/in/kflenniken" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+
+    <div class="panel">
+      <div class="label">Lisa Hough</div>
+      <div class="value">Adams County Regional Economic Partnership (AC-REP) · President &amp; CEO</div>
+      <p class="kicker">Background</p>
+      <p>Joined AC-REP as CEO in May 2021. Previously director of strategic initiatives at the Metro Denver Economic Development Corporation.</p>
+      <p>Co-chair of the Energy Subcommittee of the Colorado Office of Economic Development and International Trade's Advanced Industries Grant Committee.</p>
+      <p>Advisory board member, CU Denver Global Energy Management Program. Founding member of the Adams County Foundation. Former board member, Butterfly Pavilion.</p>
+      <p class="kicker">Current role and organization</p>
+      <p>Public/private nonprofit serving the Greater Adams County region: 10 municipalities, more than 10,000 companies, and over 500,000 residents. Runs the LEAD Metro North leadership program; on September 29, 2026, it announced 21 participants for the class of 2027.</p>
+      <p class="kicker">Relevance</p>
+      <p>Direct connection to regional energy-sector development through her energy subcommittee role. Leads a regional leadership program, a useful networking channel.</p>
+      <p class="kicker">Contact</p>
+      <p><a href="tel:+13039026920">(303) 902-6920</a><br><a href="mailto:Lisa.Hough@ac-rep.org">Lisa.Hough@ac-rep.org</a><br><a href="https://www.linkedin.com/in/lisadatorhough" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+
+    <div class="panel">
+      <div class="label">Leslie Oliver</div>
+      <div class="value">Denver Metro Chamber of Commerce (DMCC) · Vice President, External Affairs</div>
+      <p class="kicker">Background</p>
+      <p>Appointed July 2025 (announced July 16, 2025) and started in August 2025.</p>
+      <p>Nearly 30 years of experience in Colorado public affairs, political strategy, communications, and issue advocacy.</p>
+      <p>Previously managed external affairs at Comcast, including community and civic partnerships across Colorado.</p>
+      <p class="kicker">Current role and organization</p>
+      <p>Leads the Chamber's policy and advocacy team, represents members, and oversees the Chamber's policy councils and initiatives. DMCC President &amp; CEO is J.J. Ament. The annual State of the Cities event (sponsored by United Airlines) drew 500+ business and community leaders in July 2026.</p>
+      <p class="kicker">Relevance</p>
+      <p>Primary contact for Chamber policy positions and metro-Denver business advocacy. Parker White (Director of Government Affairs, Colorado Competitive Council) is a useful secondary contact.</p>
+      <p class="kicker">Contact</p>
+      <p><a href="tel:+13038106326">(303) 810-6326</a><br><a href="mailto:leslie.oliver@denverchamber.org">leslie.oliver@denverchamber.org</a><br><a href="https://www.linkedin.com/in/leslie-oliver-2293197" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+
+    <div class="panel">
+      <div class="label">Tim Miller</div>
+      <div class="value">Colorado Farm Bureau (CFB) · Director, Industry Relations</div>
+      <p class="kicker">Current role and organization</p>
+      <p>Colorado Farm Bureau is a statewide agricultural organization with a substantial policy and advocacy function. Its advocacy team includes Shawn Martini (Vice President of Advocacy), Zach Riley (Director of Federal Affairs), and Taylor Lobato (Director of Policy Communications).</p>
+      <p class="kicker">Relevance</p>
+      <p>Useful contact for agricultural, rural, water, and public-lands policy.</p>
+      <p class="kicker">Contact</p>
+      <p><a href="tel:+16514703637">(651) 470-3637</a><br><a href="mailto:tim@coloradofb.org">tim@coloradofb.org</a><br><a href="https://www.linkedin.com/in/millerrtimothy" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+
+    <div class="panel">
+      <div class="label">Aaron Johnson</div>
+      <div class="value">Western Energy Alliance (WEA), Denver · Vice President, Public and Legislative Affairs</div>
+      <p class="kicker">Background</p>
+      <p>Joined Western Energy Alliance in November 2013.</p>
+      <p>Before WEA, served on Capitol Hill as a communications director and legislative aide, and worked in defense contracting and consumer electronics. MBA from George Mason University.</p>
+      <p>Responsible for media relations, community outreach, and legislative affairs. Editor of Western Wire, a WEA-linked publication with a pro-industry perspective.</p>
+      <p class="kicker">Current role and organization</p>
+      <p>WEA represents more than 300 member companies: independent oil and natural gas exploration and production companies in the West. It advocates on federal legislative, regulatory, public lands, and environmental issues.</p>
+      <p class="kicker">Relevance</p>
+      <p>Key contact for oil and gas industry positions on federal policy, public lands, and methane regulation.</p>
+      <p class="kicker">Contact</p>
+      <p><a href="tel:+13035151067">(303) 515-1067</a><br><a href="mailto:ajohnson@westernenergyalliance.org">ajohnson@westernenergyalliance.org</a><br><a href="https://www.linkedin.com/in/aaronmjohnson" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+
+    <div class="panel">
+      <div class="label">Don Richards</div>
+      <div class="value">The Richards Financial Group · Financial advisor and independent insurance broker</div>
+      <p class="kicker">Background</p>
+      <p>Financial advisor and independent insurance broker since 1984.</p>
+      <p>Holds FINRA Series 7, 63, and 65 registrations and provides investment products through Cetera Wealth Services, LLC.</p>
+      <p>Founder of The Richards Financial Group, Inc. and Texarado Western Advisors, LLC. Associate with The Benefit Team, LLC, an employee benefits consulting and brokerage firm.</p>
+      <p class="kicker">Current role and organization</p>
+      <p>Community involvement: Denver Metro Chamber of Commerce (Executive Committee, 2008 to 2009, and board); Colorado Farm Bureau; Colorado FFA Foundation; Young Americans Education Foundation; Junior Achievement of Metro Denver; Leadership Denver graduate (2007); Daniels College of Business Dean's Society steering committee; Denver Agriculture &amp; Livestock Club (Vice President).</p>
+      <p class="kicker">Relevance</p>
+      <p>Well connected in the Denver business community, agriculture, and philanthropy. His former chamber board role gives him context on DMCC policy and governance.</p>
+      <p class="kicker">Contact</p>
+      <p><a href="tel:+13038293229">(303) 829-3229</a><br><a href="mailto:don@richardsfinancialgroup.com">don@richardsfinancialgroup.com</a><br><a href="https://www.linkedin.com/in/donrichardscfp" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+  </section>
+
+  <section id="briefing-overlap" data-tab="briefing">
+    <h2>Cross-cutting notes</h2>
+    <div class="panel">
+      <div class="label">Overlap</div>
+      <p class="kicker">Energy</p>
+      <p>Bill Ritter, Lisa Hough, and Aaron Johnson all work on energy policy from different sides.</p>
+      <p class="kicker">Local government and economic development</p>
+      <p>Bill Ritter, Kelly Flenniken, and Lisa Hough.</p>
+      <p class="kicker">Agriculture</p>
+      <p>Tim Miller (Colorado Farm Bureau) and Don Richards (Farm Bureau and agriculture groups).</p>
+    </div>
+  </section>
+
+  <section id="cph" data-tab="cph">
+    <h2>CPH guest list</h2>
+    <div class="subhead">Hosts</div>
+    <div class="grid" id="cph-host-grid"></div>
+    <hr style="border:0;border-top:0.5pt solid var(--line);margin:24px 0 0">
+    <div class="grid" id="cph-grid" style="margin-top:24px"></div>
+  </section>
+</main>
+
+<a class="totop" href="#top">Back to top</a>
+
+<script>
+(function(){
+  var ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
+  var CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>';
+
+  function setIcon(btn, icon){ btn.innerHTML = icon; }
+
+  function copyFor(btn, text){
+    var finish = function(ok){
+      setIcon(btn, ok ? CHECK : ICON);
+      btn.classList.toggle("done", ok);
+      btn.title = ok ? "Copied" : "Copy";
+      setTimeout(function(){ setIcon(btn, ICON); btn.classList.remove("done"); btn.title = "Copy"; }, 1400);
+    };
+    try {
+      navigator.clipboard.writeText(text).then(function(){ finish(true); }, function(){ btn.title = "Select the text to copy"; });
+    } catch (err) { btn.title = "Select the text to copy"; }
+  }
+
+  function makeCopy(text, label){
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "copy";
+    b.setAttribute("aria-label", label);
+    setIcon(b, ICON); b.title = "Copy";
+    b.addEventListener("click", function(){ copyFor(b, text); });
+    return b;
+  }
+
+  function digits(p){ return p.replace(/[^0-9]/g,""); }
+
+  // Static copy buttons on the key contact and catering cards
+  document.querySelectorAll("button.copy[data-copy]").forEach(function(btn){
+    setIcon(btn, ICON);
+    btn.title = "Copy";
+    btn.addEventListener("click", function(){ copyFor(btn, btn.getAttribute("data-copy")); });
+  });
+
+  // Tabs: main details, suite guest list, CPH guest list
+  var tabButtons = document.querySelectorAll(".tabs button");
+  function showTab(name){
+    document.querySelectorAll("[data-tab]").forEach(function(el){
+      if (el.tagName === "BUTTON") return;
+      el.hidden = el.getAttribute("data-tab") !== name;
+    });
+    tabButtons.forEach(function(b){ b.setAttribute("aria-selected", String(b.getAttribute("data-tab") === name)); });
+    document.querySelector(".tabs").scrollIntoView({block:"start"});
+  }
+  tabButtons.forEach(function(b){ b.addEventListener("click", function(){ showTab(b.getAttribute("data-tab")); }); });
+  showTab("main");
+
+  // CPH guest cards
+  // CPH people: top three kept first, then A–Z by first name. Phones are 10-digit strings.
+  var PHONE_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>';
+  function fmtPhone(d){ return "(" + d.slice(0,3) + ") " + d.slice(3,6) + "-" + d.slice(6); }
+
+  var people = [
+    ["Adam Edmison","Vice President ILS-EPC","2819001575"],
+    ["Raymon Williams","Project Director-Decarbonized Energy","7573441714"],
+    ["Adam Marsano","Project Director-Engineering","3033198984"],
+    ["Adrian Pacheco","Coordinator-Major Projects","7204812632"],
+    ["Barnett Brock","Assistant Manager-Construction","3072591523"],
+    ["Chad Coole","Senior Manager-Construction ILS","8063342104"],
+    ["Clint Ensminger","Senior Manager-Project Contracts","2819959198"],
+    ["David Walls","CPH Construction Manager (C)","2812211670"],
+    ["Dustin Berger","Executive Director-Planning and Development","5054592683"],
+    ["Eric Bailey","Project Manager-Power Facilities","7203294061"],
+    ["Jeff Jenkins","Vice President-Plant Operations ILS","8126298897"],
+    ["Jeff Meyer","Manager-Construction Deputy","8063340344"],
+    ["JoAnne Lehman","Manager-Environmental Compliance","3032504259"],
+    ["Kayla Hampton","Coordinator-Major Projects","5048756019"],
+    ["Kyle Hoffman","Senior Counsel","3078717597"],
+    ["Muhammed Rahim","Senior Technical Advisor-Power Systems","5635283319"],
+    ["Stein Haakenstad","Project Manager-Expansion Projects","9188048217"],
+    ["Stephen Polson","Manager-Project Controls","3466441187"],
+    ["Tony Lewis","CPH Construction Manager (C)","2818026907"]
+  ];
+  var grid = document.getElementById("cph-grid");
+  var hostGrid = document.getElementById("cph-host-grid");
+  var cphHosts = ["Raymon Williams", "Adam Marsano"];
+  // Hosts keep their order; all other CPH guests sort A–Z by first name
+  var cphIsHost = function(p){ return cphHosts.indexOf(p[0]) !== -1; };
+  people = people.filter(cphIsHost).concat(people.filter(function(p){ return !cphIsHost(p); }).sort(function(a, b){ return a[0].localeCompare(b[0]); }));
+  people.forEach(function(p){
+    var isHost = cphHosts.indexOf(p[0]) !== -1;
+    var card = document.createElement("div");
+    card.className = "card" + (isHost ? " tg" : "");
+    var h = document.createElement("h3"); h.textContent = p[0]; card.appendChild(h);
+    var org = document.createElement("div"); org.className = "org"; org.textContent = p[1]; card.appendChild(org);
+    var r = document.createElement("div"); r.className = "row";
+    var num = fmtPhone(p[2]);
+    var s = document.createElement("span"); s.textContent = num; r.appendChild(s);
+    var call = document.createElement("a");
+    call.className = "call"; call.href = "tel:+1" + p[2];
+    call.setAttribute("aria-label", "Call " + p[0]); call.title = "Call";
+    call.innerHTML = PHONE_ICON;
+    r.appendChild(call);
+    r.appendChild(makeCopy(num, "Copy phone number"));
+    card.appendChild(r);
+    (isHost ? hostGrid : grid).appendChild(card);
+  });
+
+  // Suite guest cards
+  var guests = [
+    ["Bill Ritter","Freestone Strategies","Partner","bill@freestone-strategies.com","(303) 325-1955"],
+    ["Rich Werner","Upstate Colorado","President & CEO","rwerner@upstatecolorado.org","(970) 371-1081"],
+    ["Naomi Colwell","Aurora Chamber of Commerce","President & CEO","NColwell@aurorachamber.org","(303) 888-1961"],
+    ["Marcus Eller","United Energy Trading","+1 Guest: Kimberly","meller@uetllc.com","(719) 271-2191"],
+    ["Drew Kramer","Tallgrass","Manager-State & Local Public Affairs","","(303) 681-1341"],
+    ["Rachel Carmichael","Tallgrass","Sr. Director, Government & Public Affairs","","(832) 776-6028"],
+    ["Kelly Flenniken","Colorado Counties, Inc. (CCI)","Executive Director","kflenniken@ccionline.org","(970) 778-1118"],
+    ["Lisa Hough","Adams County Regional Economic Partnership","President & CEO","Lisa.Hough@ac-rep.org","(303) 902-6920"],
+    ["Leslie Oliver","Denver Metro Chamber of Commerce","VP External Affairs","leslie.oliver@denverchamber.org","(303) 810-6326"],
+    ["Tony Sanabria","Tallgrass","Senior Director-Commercial Optimization & Business Development","","(216) 235-2378"],
+    ["Mark Donnelly","Tallgrass","Project Director-Major Projects","","(970) 412-2908","Project Director-Major Projects"],
+    ["Tim Miller","Colorado Farm Bureau","Director, Industry Relations","tim@coloradofb.org","(651) 470-3637"],
+    ["Don Richards","","Former leader for the Denver Metro EDC","don@richardsfinancialgroup.com","(303) 829-3229"],
+    ["Travis Sinclair","Tallgrass","Senior Land & ROW Agent","","(713) 503-8728"]
+  ];
+  var clubSeats = [
+    ["Brandt Schiche","Tallgrass","Commercial","","(307) 620-1573"],
+    ["Doug Klepper","Deeprock Energy Resources","Scheduler","","(405) 923-2230",null,"+1 Guest - Kimberly"],
+    ["Mike Metzger","Tallgrass","Commercial","","(214) 883-7945"]
+  ];
+  // Hosts first (Rachel, then Drew), then non-Tallgrass guests, then other Tallgrass guests; each group A–Z by first name
+  var hostOrder = ["Rachel Carmichael", "Drew Kramer"];
+  function guestRank(g){
+    var hi = hostOrder.indexOf(g[0]);
+    if (hi !== -1) return hi;
+    return g[1] === "Tallgrass" ? 3 : 2;
+  }
+  guests.sort(function(a, b){
+    var ra = guestRank(a), rb = guestRank(b);
+    if (ra !== rb) return ra - rb;
+    return a[0].localeCompare(b[0]);
+  });
+  var hgrid = document.getElementById("host-grid");
+  var sgrid = document.getElementById("suite-grid");
+  // Card format: Name / Title / Company / (gap) / Email / Tel
+  function buildGuest(g){
+    var card = document.createElement("div");
+    card.className = "card guest" + (g[1] === "Tallgrass" ? " tg" : "");
+    var h = document.createElement("h3"); h.textContent = g[0]; card.appendChild(h);
+    if (g[2]) { var ti = document.createElement("div"); ti.className = "org"; ti.textContent = g[2]; card.appendChild(ti); }
+    if (g[1]) { var co = document.createElement("div"); co.className = "org"; co.textContent = g[1]; card.appendChild(co); }
+    if (g[6]) { var nt = document.createElement("div"); nt.className = "org"; nt.textContent = g[6]; card.appendChild(nt); }
+    var r1 = document.createElement("div"); r1.className = "row gap";
+    if (g[3]) {
+      var e = document.createElement("a"); e.href = "mailto:" + g[3]; e.textContent = g[3]; r1.appendChild(e);
+      r1.appendChild(makeCopy(g[3], "Copy email"));
+    } else if (g[1] !== "Tallgrass" && !g[6]) {
+      var en = document.createElement("span"); en.textContent = "No email on file"; r1.appendChild(en);
+    }
+    if (r1.childNodes.length) card.appendChild(r1);
+    var r2 = document.createElement("div"); r2.className = "row";
+    if (g[4]) {
+      var t = document.createElement("a"); t.href = "tel:+1" + digits(g[4]); t.textContent = g[4]; r2.appendChild(t);
+      r2.appendChild(makeCopy(g[4], "Copy phone number"));
+    } else {
+      var mn = document.createElement("span"); mn.textContent = "No mobile on file"; r2.appendChild(mn);
+    }
+    card.appendChild(r2);
+    return card;
+  }
+  guests.forEach(function(g){
+    (hostOrder.indexOf(g[0]) !== -1 ? hgrid : sgrid).appendChild(buildGuest(g));
+  });
+  clubSeats.forEach(function(g){
+    document.getElementById("club-grid").appendChild(buildGuest(g));
+  });
+})();
+</script>
+<div id="a2hs" class="a2hs" role="dialog" aria-label="Add to home screen" hidden>
+  <div class="a2hs-text"><strong>Add to your home screen</strong><span id="a2hs-how">Get this page one tap away on game day.</span></div>
+  <div class="a2hs-actions">
+    <button type="button" id="a2hs-add" hidden>Add</button>
+    <button type="button" id="a2hs-no">Not now</button>
+  </div>
+</div>
+<script>
+(function(){
+  var box = document.getElementById("a2hs");
+  if (!box) return;
+  var standalone = (window.matchMedia && matchMedia("(display-mode: standalone)").matches) || window.navigator.standalone === true;
+  if (standalone) return;
+  try { if (localStorage.getItem("a2hsDismissed")) return; } catch (e) {}
+  var ua = navigator.userAgent || "";
+  var isIOS = /iPhone|iPad|iPod/.test(ua);
+  var isAndroid = /Android/.test(ua);
+  if (!isIOS && !isAndroid) return;
+  var how = document.getElementById("a2hs-how");
+  var addBtn = document.getElementById("a2hs-add");
+  var deferred = null;
+  how.textContent = isIOS ? "Tap Share, then Add to Home Screen." : "Tap the browser menu, then Add to Home screen.";
+  window.addEventListener("beforeinstallprompt", function (e) {
+    e.preventDefault();
+    deferred = e;
+    addBtn.hidden = false;
+    how.textContent = "Tap Add to install it on your home screen.";
+  });
+  function hide() {
+    box.hidden = true;
+    try { localStorage.setItem("a2hsDismissed", "1"); } catch (e) {}
+  }
+  addBtn.addEventListener("click", function () {
+    if (!deferred) return;
+    deferred.prompt();
+    deferred.userChoice.then(function () { deferred = null; hide(); });
+  });
+  document.getElementById("a2hs-no").addEventListener("click", hide);
+  box.hidden = false;
+})();
+</script>
+</body></html>
+
+
+</body></html>
